@@ -1,13 +1,5 @@
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+<h4>High Level Design for Feedback Ingestion</h4>
 
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-### High Level Design for Feedback Ingestion
 
 Components
 
@@ -42,8 +34,8 @@ Key Design Decisions
 ![alt_text](images/image1.png "image_tooltip")
 
 
+<h4>Low Level Design</h4>
 
-### Low Level Design
 
 APIs
 
