@@ -5,6 +5,7 @@ Components
 * Source - Exposed via public APIs
 * Tenant - Each tenant can derive data from multiple sources.
 * Feedback Pull Service -  Pull Feedback from different sources
+* Feedback APIs - APIs to add feedback and retrieve feedback
 * Tranformation Service - Transform the feedback data from various sources to a unified schema model
 * Feeback Database - Stores the transformed feedback
 
@@ -12,7 +13,8 @@ Workflow
 * Feedback pull service pull the data from the public API after a scheduled time 
 * Feedback can also be pushed to the service which is exposed via HTTP APIs.
 * The raw data is then passed to the transformation layer which converts the Source specific data to common schema.
-* After the conversion the data is pushed to a Feedback Database or any other consumer.
+* After the conversion the data is pushed to a Feedback Database.
+* Consumer can consume the data via APIs.
 
 Key Design Decisions
 * Pulling the data at after a specific time interval due to the nature of the Feedback data which is not very time sensitive, so Batch Processing is a better choice
