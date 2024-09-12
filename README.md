@@ -17,7 +17,7 @@ Workflow
 Key Design Decisions
 * Pulling the data at after a specific time interval due to the nature of the Feedback data which is not very time sensitive, so Batch Processing is a better choice
 
-![alt text for screen readers](/blob/main/Screenshot%202024-09-12%20at%2012.43.46%20PM.png "Flow Diagram")
+![alt text for screen readers](/Screenshot%202024-09-12%20at%2012.43.46%20PM.png "Flow Diagram")
 
 <h4>Low Level Design</h4>
 
