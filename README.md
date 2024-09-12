@@ -17,7 +17,7 @@ Workflow
 Key Design Decisions
 * Pulling the data at after a specific time interval due to the nature of the Feedback data which is not very time sensitive, so Batch Processing is a better choice
 
-
+![alt text for screen readers](/path/to/image.png "Flow Diagram")
 
 <h4>Low Level Design</h4>
 
@@ -31,7 +31,7 @@ Add a tenant and tenant source configuration
 * Update a tenant
 * Add tenant source configs like sourceType, topicId and additional parameters
 
-
+```
 POST /tenant/add
 Request:
 {
@@ -45,7 +45,7 @@ Request:
            }
         ]
  }
-
+```
 
 
 Add feedback 
@@ -53,6 +53,7 @@ Add feedback
 * Give the tenant name, source type, and feedbackType
 * Data is a raw feedback string consisting of key value pairs
 
+```
 POST /feedback/add
 Request:
 {
@@ -61,7 +62,7 @@ Request:
 	data : <string>
 	feedbackType : <enum>
 }
-
+```
 
 Get feedback
 
@@ -69,7 +70,7 @@ Get feedback
 
 * Get All the feedback stored in the database
 
-  
+```  
 GET /feedback/getAll
 
 Response:
@@ -88,12 +89,12 @@ Response:
         "feedbackType": <enum>   
        }
 ]
-
+```
 
 
 Get feedback for a tenant
 
-
+```
 GET /feedback/getAllForTenant/tenantName
 Response:
 [     
@@ -111,4 +112,4 @@ Response:
         "feedbackType": <enum>   
        }}]
 
-
+```
